@@ -127,41 +127,47 @@ def pick_items(item_type):
         return pets
     
     
+wall_colours = pick_items("wall_colours")
+nationalities = pick_items("nationalities")
+foods = pick_items("foods")
+beverages = pick_items("beverages")
+pets = pick_items("pets")
+
 
 house1 = {
-    "Wall Colour": pick_items("wall_colours")[0],
-    "Nationality": pick_items("nationalities")[0],
-    "Food": pick_items("foods")[0],
-    "Beverage": pick_items("beverages")[0],
-    "Pet": pick_items("pets")[0]}
+    "Wall Colour": wall_colours[0],
+    "Nationality": nationalities[0],
+    "Food": foods[0],
+    "Beverage": beverages[0],
+    "Pet": pets[0]}
 
 house2 = {
-    "Wall Colour": pick_items("wall_colours")[1],
-    "Nationality": pick_items("nationalities")[1],
-    "Food": pick_items("foods")[1],
-    "Beverage": pick_items("beverages")[1],
-    "Pet": pick_items("pets")[1]}
+    "Wall Colour": wall_colours[1],
+    "Nationality": nationalities[1],
+    "Food": foods[1],
+    "Beverage": beverages[1],
+    "Pet": pets[1]}
 
 house3 = {
-    "Wall Colour": pick_items("wall_colours")[2],
-    "Nationality": pick_items("nationalities")[2],
-    "Food": pick_items("foods")[2],
-    "Beverage": pick_items("beverages")[2],
-    "Pet": pick_items("pets")[2]}
+    "Wall Colour": wall_colours[2],
+    "Nationality": nationalities[2],
+    "Food": foods[2],
+    "Beverage": beverages[2],
+    "Pet": pets[2]}
 
 house4 = {
-    "Wall Colour": pick_items("wall_colours")[3],
-    "Nationality": pick_items("nationalities")[3],
-    "Food": pick_items("foods")[3],
-    "Beverage": pick_items("beverages")[3],
-    "Pet": pick_items("pets")[3]}
+    "Wall Colour": wall_colours[3],
+    "Nationality": nationalities[3],
+    "Food": foods[3],
+    "Beverage": beverages[3],
+    "Pet": pets[3]}
 
 house5 = {
-    "Wall Colour": pick_items("wall_colours")[4],
-    "Nationality": pick_items("nationalities")[4],
-    "Food": pick_items("foods")[4],
-    "Beverage": pick_items("beverages")[4],
-    "Pet": pick_items("pets")[4]}
+    "Wall Colour": wall_colours[4],
+    "Nationality": nationalities[4],
+    "Food": foods[4],
+    "Beverage": beverages[4],
+    "Pet": pets[4]}
 
 print(f"Can you figure out who keeps {house4['Pet']}?\n\n")
 
@@ -176,8 +182,46 @@ The person living in the centre house drinks {house3["Beverage"]}
 The {house1["Nationality"]} lives in the first house
 The man who doensn't eat {house2["Food"]} lives next to the one who keeps {house1["Pet"]}
 The man who keeps {house2["Pet"]} lives next to the man who doesn't eat {house1["Food"]}
-The owner who smokes {house5["Food"]} drinks {house5["Beverage"]}
+The owner who doesn't eat {house5["Food"]} drinks {house5["Beverage"]}
 The {house4["Nationality"]} doesn't eat {house4["Food"]}
 The {house1["Nationality"]} lives next to the {house2["Wall Colour"]} house
 The man who doesn't eat {house2["Food"]} has a neighbor who drinks {house1["Beverage"]}
 """)
+
+command = input("Enter any character(s) so see the solution solution > ")
+
+if len(command) > 0:
+    print(f"""House 1:
+> Wall Colour: {house1["Wall Colour"]}
+> Nationality: {house1["Nationality"]}
+> Food: {house1["Food"]}
+> Beverage: {house1["Beverage"]}
+> Pet: {house1["Pet"]}
+
+House 2:
+> Wall Colour: {house2["Wall Colour"]}
+> Nationality: {house2["Nationality"]}
+> Food: {house2["Food"]}
+> Beverage: {house2["Beverage"]}
+> Pet: {house2["Pet"]}
+
+House 3:
+> Wall Colour: {house3["Wall Colour"]}
+> Nationality: {house3["Nationality"]}
+> Food: {house3["Food"]}
+> Beverage: {house3["Beverage"]}
+> Pet: {house3["Pet"]}
+
+House 4:
+> Wall Colour: {house4["Wall Colour"]}
+> Nationality: {house4["Nationality"]}
+> Food: {house4["Food"]}
+> Beverage: {house4["Beverage"]}
+> Pet: {house4["Pet"]}
+
+House 5:
+> Wall Colour: {house5["Wall Colour"]}
+> Nationality: {house5["Nationality"]}
+> Food: {house5["Food"]}
+> Beverage: {house5["Beverage"]}
+> Pet: {house5["Pet"]}""")
