@@ -170,7 +170,7 @@ The {house5["Nationality"]} keeps {house5["Pet"]} as pets
 The {house2["Nationality"]} drinks {house5["Beverage"]}
 The {house4["Wall Colour"]} house is on the left of the {house5["Wall Colour"]} house
 The {house4["Wall Colour"]} house's owner drinks {house4["Beverage"]}
-The person who doesn't eat {house3["Food"]} rears {house3["Pet"]}
+The person who doesn't eat {house3["Food"]} keeps {house3["Pet"]}
 The owner of the {house1["Wall Colour"]} house doesn't eat {house1["Food"]}
 The person living in the centre house drinks {house3["Beverage"]}
 The {house1["Nationality"]} lives in the first house
