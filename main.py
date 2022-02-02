@@ -1,4 +1,5 @@
 from random import randint
+from sys import exit
 
 possible_wall_colours = [
     "white", "light grey", "grey", "black",
@@ -126,7 +127,8 @@ def pick_items(item_type):
         
         return pets
     
-    
+
+ 
 wall_colours = pick_items("wall_colours")
 nationalities = pick_items("nationalities")
 foods = pick_items("foods")
@@ -188,10 +190,11 @@ The {house1["Nationality"]} lives next to the {house2["Wall Colour"]} house
 The man who doesn't eat {house2["Food"]} has a neighbor who drinks {house1["Beverage"]}
 """)
 
-command = input("Enter any character(s) so see the solution solution > ")
+while True:
+    command = input("Enter 's' for solution or 'q' for quit > ")
 
-if len(command) > 0:
-    print(f"""House 1:
+    if command.lower() == "s":
+        print(f"""House 1:
 > Wall Colour: {house1["Wall Colour"]}
 > Nationality: {house1["Nationality"]}
 > Food: {house1["Food"]}
@@ -225,3 +228,7 @@ House 5:
 > Food: {house5["Food"]}
 > Beverage: {house5["Beverage"]}
 > Pet: {house5["Pet"]}""")
+        break
+
+    if command.lower() == "q":
+        exit()
