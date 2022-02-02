@@ -163,6 +163,7 @@ house5 = {
     "Beverage": pick_items("beverages")[4],
     "Pet": pick_items("pets")[4]}
 
+print(f"Can you figure out who keeps {house4['Pet']}?\n\n")
 
 print(f"""The {house3["Nationality"]} lives in the {house3["Wall Colour"]} house
 The {house5["Nationality"]} keeps {house5["Pet"]} as pets
