@@ -171,6 +171,8 @@ house5 = {
     "Beverage": beverages[4],
     "Pet": pets[4]}
 
+print("""Every house has a person of a different nationality living in it and has different coloured walls
+Each person has a food they don't eat, has a preferred beverage and a pet\n""")
 print(f"Can you figure out who keeps {house4['Pet']}?\n\n")
 
 print(f"""The {house3["Nationality"]} lives in the {house3["Wall Colour"]} house
@@ -182,12 +184,12 @@ The person who doesn't eat {house3["Food"]} keeps {house3["Pet"]}
 The owner of the {house1["Wall Colour"]} house doesn't eat {house1["Food"]}
 The person living in the centre house drinks {house3["Beverage"]}
 The {house1["Nationality"]} lives in the first house
-The man who doensn't eat {house2["Food"]} lives next to the one who keeps {house1["Pet"]}
-The man who keeps {house2["Pet"]} lives next to the man who doesn't eat {house1["Food"]}
+The person who doensn't eat {house2["Food"]} lives next to the one who keeps {house1["Pet"]}
+The person who keeps {house2["Pet"]} lives next to the person who doesn't eat {house1["Food"]}
 The owner who doesn't eat {house5["Food"]} drinks {house5["Beverage"]}
 The {house4["Nationality"]} doesn't eat {house4["Food"]}
 The {house1["Nationality"]} lives next to the {house2["Wall Colour"]} house
-The man who doesn't eat {house2["Food"]} has a neighbor who drinks {house1["Beverage"]}
+The person who doesn't eat {house2["Food"]} has a neighbor who drinks {house1["Beverage"]}
 """)
 
 while True:
