@@ -58,71 +58,71 @@ def generate_random_index(end_index):
 
 def pick_items(item_type):
     if item_type == "wall_colours":
-        used_indeces = []
+        used_indices = []
         wall_colours = []
         count = 0
         
         while count < 5:
             random_index = generate_random_index(len(possible_wall_colours) - 1)
-            if random_index not in used_indeces:
+            if random_index not in used_indices:
                 wall_colours.append(possible_wall_colours[random_index])
-                used_indeces.append(random_index)
+                used_indices.append(random_index)
                 count += 1
         
         return wall_colours
     
     if item_type == "nationalities":
-        used_indeces = []
+        used_indices = []
         nationalities = []
         count = 0
         
         while count < 5:
             random_index = generate_random_index(len(possible_nationalities) - 1)
-            if random_index not in used_indeces:
+            if random_index not in used_indices:
                 nationalities.append(possible_nationalities[random_index])
-                used_indeces.append(random_index)
+                used_indices.append(random_index)
                 count += 1
         
         return nationalities
     
     if item_type == "foods":
-        used_indeces = []
+        used_indices = []
         foods = []
         count = 0
         
         while count < 5:
             random_index = generate_random_index(len(possible_foods) - 1)
-            if random_index not in used_indeces:
+            if random_index not in used_indices:
                 foods.append(possible_foods[random_index])
-                used_indeces.append(random_index)
+                used_indices.append(random_index)
                 count += 1
         
         return foods
     
     if item_type == "beverages":
-        used_indeces = []
+        used_indices = []
         beverages = []
         count = 0
         
         while count < 5:
             random_index = generate_random_index(len(possible_beverages) - 1)
-            if random_index not in used_indeces:
+            if random_index not in used_indices:
                 beverages.append(possible_beverages[random_index])
-                used_indeces.append(random_index)
+                used_indices.append(random_index)
                 count += 1
         
         return beverages
     
     if item_type == "pets":
-        used_indeces = []
+        used_indices = []
         pets = []
         count = 0
         
         while count < 5:
             random_index = generate_random_index(len(possible_pets) - 1)
-            if random_index not in used_indeces:
+            if random_index not in used_indices:
                 pets.append(possible_pets[random_index])
-                used_indeces.append(random_index)
+                used_indices.append(random_index)
                 count += 1
         
         return pets
